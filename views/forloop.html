@@ -1,0 +1,12 @@
+{% extends 'templates/base.html' %}
+
+{% block body %}
+
+<h1> Iterating Array in swig </h1>
+<ul>
+  {% for item in list %}
+    <li>{{ loop.index }} - {{ item|upper }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
